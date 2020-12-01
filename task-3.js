@@ -11,19 +11,16 @@
 
 const ADMIN_PASSWORD = 'jqueryismyjam';
 const CANCELED = 'Отменено пользователем!';
-const userPassword = 'jqueryismyjam';
-
 let message;
 
-prompt('Please, enter your password!');
+const value = prompt('Please, enter your password!');
 
-if (ADMIN_PASSWORD === null) {
+if (value === null) {
     message = 'Отменено пользователем!';
-} else if (ADMIN_PASSWORD === userPassword) {
+} else if (ADMIN_PASSWORD === value) {
     message = 'Добро пожаловать!';
-} else if  (ADMIN_PASSWORD !== userPassword) {
+} else  {
     message = 'Доступ запрещен, неверный пароль!';
 }
-
 
 alert(message);
