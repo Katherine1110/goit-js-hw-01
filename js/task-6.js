@@ -13,9 +13,9 @@ while (input !== null) {
     total += Number(input);
     input = prompt('Введите любое число');
 
-    if(Number.isNaN(input)) {
-        alert('Было введено не число, попробуйте еще раз');
-    }
-}
+    // if(Number.isNaN(input)) {
+    //     alert('Было введено не число, попробуйте еще раз');
+    // }  Позже доделаю, ради интереса.
+}  
 
 alert(`Общая сумма чисел равна ${total}`)
