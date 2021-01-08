@@ -7,15 +7,15 @@
 // Присвой товару новую цену - 2000
 // Используя шаблонную строку выведи в консоль информацию о товаре, получится: 'Выбран «Генератор защитного поля», цена за штуку 2000 кредитов'.
 
-const name = 'Генератор защитного поля';
+const NAME = 'Генератор защитного поля';
 let price = 1000;
 
-const firstInfo = `Выбран ${name}, цена за штуку ${price} кредитов`;
+let message = `Выбран ${NAME}, цена за штуку ${price} кредитов`;
 
-console.log(firstInfo);
+console.log(message);
 
 price = 2000;
 
-const secondInfo = `Выбран ${name}, цена за штуку ${price} кредитов`;
+message = `Выбран ${NAME}, цена за штуку ${price} кредитов`;
 
-console.log(secondInfo);
+console.log(message);
