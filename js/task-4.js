@@ -18,34 +18,17 @@ let credits = 23580;
 const pricePerDroid = 3000;
 
 
-const VALUE = prompt('Сколько дроидов желаете пробрести?');
+const value = prompt('Сколько дроидов желаете пробрести?');
 let totalPrice = pricePerDroid * VALUE;
 let message;
 
-if (VALUE === null) {
+if (value === null) {
     message = 'Отменено пользователем!';
 } else if (totalPrice > credits) {
     message = 'Недостаточно средств на счету!';
 } else {
     credits -= totalPrice;
-    message = `Вы купили ${VALUE} дроидов, на счету осталось ${credits} кредитов.`;
+    message = `Вы купили ${value} дроидов, на счету осталось ${credits} кредитов.`;
 };
 
 alert(message);
-
-
-// const credits = 23580;
-// const pricePerDroid = 3000;
-
-
-// let value = prompt('Сколько дроидов желаете пробрести?');
-// let totalPrice = (pricePerDroid * value);
-
-// if (value === null) {
-//     alert('Отменено пользователем!')
-// } else if (totalPrice > credits) {
-//     alert('Недостаточно средств на счету!')
-// } else {
-//     totalPrice = credits - (pricePerDroid * value)
-//     alert(`Вы купили ${value} дроидов, на счету осталось ${totalPrice} кредитов.`)
-// }
